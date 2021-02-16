@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Lexend;
+  src: url(Fonts/LexendMega-Regular.ttf);
+}
+
+.custom-shadow {
+    box-shadow: 0.2rem 0rem 0.7rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+:root {
+  --bs-info: #2E72AD;
+}
+
+.btn-info {
+  background-color: #2E72AD;
+  border-color: #2E72AD;
+  color: white;
+}
+
+.btn-custom-dark {
+  border: 0.01rem solid #2E72AD;
+  background-color: #222231;
+  color: white;
+}
+.btn-custom-dark:hover {
+  color: black;
+  background-color: #2E72AD;
+}
+
+.custom-info {
+  background-color: #2E72AD;
+}
+
+.dark-custom-bg {
+  background-color: #222231;
+}
+
+.light-dark-custom-bg {
+  background-color: #2B2B45;
+}
+
+.dark-hidden-text {
+  color: #222231
+}
+
+.custom-rounded {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.btn-outline-light:hover {
+  color: #2E72AD;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.custom-translation {
+  left: 35%;
+}
+
+.footer-links {
+  margin: auto 0.4rem 0rem 0.4rem
+}
+
+.custom-centered {
+  margin: auto auto auto auto;
+  display: block;
+}
+
+#lexend {
+  font-family: Lexend;
+}
+
+body {
+  overflow-x: hidden;
+}

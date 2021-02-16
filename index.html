@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Social</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="CSS/custom.css" rel="stylesheet">
+    <link rel="icon" 
+      type="image/png" 
+      href="Images/social-logo-inverse.png">
+</head>
+<body class="dark-custom-bg text-white">
+    <nav class="navbar navbar-rounded navbar-expand custom-info custom-shadow mb-4 custom-rounded" role="navigation">
+        <a class="navbar-brand ms-2 text-light" href="#"><img class="ms-2 me-2" src="Images/social-logo.png" width="24" height="30">Bootstrap Social</a>
+        <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-light"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-light">
+            <li class="nav-item active text-light">
+              <a class="nav-link text-light" href="#">Home <!--<span class="sr-only">(current)</span>--></a>
+            </li>
+            <li class="nav-item text-light">
+              <a class="nav-link text-light" href="#">Explore </a>
+            </li>
+            <li class="nav-item text-light">
+              <a class="nav-link btn btn-outline-light" style="margin-left: 1rem;" href="#">Signup </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container-fluid">
+        <img src="Images/Pixels.png" class="float-start rounded-circle img-fluid me-3 mb-0 custom-shadow" style="max-width: 10%;">
+
+        <div class="card float-end custom-info">
+          <a class="btn btn-dark" data-bs-toggle="collapse" href="#friends" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <span id="lexend">Friends</span>
+          </a>
+          <div class="collapse mt-2 me-3" id="friends">
+            <ul>
+              <li>
+                <a class="btn btn-outline-light float-end mt-2">View Profile</a>
+                <a style="text-decoration: none;" href="#"><img src="Images/pfp2.png" class="rounded-circle img-fluid shadow" style="max-width: 30%;"><br><p class="text-white-50">@TheRealJimmy</p></a>
+              </li>
+              <li>
+                <a class="btn btn-outline-light float-end mt-2">View Profile</a>
+                <a style="text-decoration: none;" href="#"><img src="Images/pfp3.png" class="rounded-circle img-fluid shadow" style="max-width: 30%;"><br><p class="text-white-50">@BootOfficial</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="ms-5 mb-0 fs-1 text-info" id="lexend">Alexander J. Welton</p>
+        <p class="ms-5 fs-6 text-white-50 m-0 mb-2">@PotatoMan</p>
+        <button type="button" class="btn btn-info" id="friendRequest" onclick="friendRequest();">Send Friend Request</button>
+        <br>
+        <br>
+        <hr>
+        <p class="fs-1 text-info" id="lexend">Bio</p><hr><p class="fs-5 ms-2 light-dark-custom-bg rounded p-1">I am bad at writing bios, so just pretend there's stuff here</p> <!--This is lazy, but for the record, it's basically what I have on my actual social media-->
+        <hr>
+    </div>
+
+    <div class="container-fluid float-start ms-2">
+      <ul>
+        <li><span id="lexend">Birthdate</span>: 07/22/04</li>
+        <li><span id="lexend">Name</span>: Alexander J. Welton</li>
+        <li><span id="lexend">SSN</span>: 743-98-6894 <span class="text-white-50"><(this is a joke)</span></li>
+        <li><span id="lexend">Interests</span>:
+          <ol>
+            <li>Coding and Programming</li>
+            <li>Pixel Art and Animation</li>
+            <li>Game Dev</li>
+          </ol>
+        </li>
+      </ul>
+      <hr>
+      <a class="btn btn-custom-dark custom-centered text-info" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <h2 id="lexend">Posts</h2>
+      </a>
+      <div class="collapse" id="collapseExample">
+        <hr>
+        <div class="card card-body light-dark-custom-bg">
+          <div class="custom-info p-2 rounded custom-shadow mt-4" id="collapse" style="display: block; margin-left: auto; margin-right: auto; width: 35%;">
+            <a href="%" style="text-decoration: none;"><img src="Images/Pixels.png" class="float-start rounded-circle img-fluid m-3 shadow" style="max-width: 20%;">
+            <p class="fs-5 text-white mt-3" id="lexend">Alexander J. Welton</p>
+            <p class="fs-6 text-white-50" style="text-decoration: none;">@PotatoMan</p>
+            <p class="fs-6 text-white-50">02/10/2021</p>
+            </a>
+            <hr>
+              <p class="text-dark rounded bg-light p-2 mt-4">>Made an account just to post this</p>
+            <hr>
+            <img src="Images/Pixels.png" class="rounded me-1" style="width: 100%;">
+            <input id="heartOne" type="image" src="Images/heart.png" onclick="invertIcon('heartOne')" class="mt-1 float-start" style="background-color: #2E72AD; max-width: 2.5rem;">
+            <input id="repostOne" type="image" src="Images/repost.png" onclick="invertIcon('repostOne')" class="mt-1 ms-2" style="background-color: #2E72AD; max-width: 2.5rem;">
+          </div>
+
+      <div class="custom-info p-2 rounded custom-shadow mt-4" style="display: block; margin-left: auto; margin-right: auto; width: 35%;">
+        <a href="%" style="text-decoration: none;"><img src="Images/Pixels.png" class="float-start rounded-circle img-fluid m-3 shadow" style="max-width: 20%;">
+        <p class="fs-5 text-white mt-3" id="lexend">Alexander J. Welton</p>
+        <p class="fs-6 text-white-50" style="text-decoration: none;">@PotatoMan</p>
+        <p class="fs-6 text-white-50">02/10/2021</p>
+        </a>
+        <hr>
+          <p class="text-dark rounded bg-light p-2 mt-4">>And this <br><span class="text-white">></span>(made for <a href="#" class="text-info">@TheRealJimmy</a>)</p>
+        <hr>
+        <img src="Images/pfp2-big.png" class="rounded me-1" style="width: 100%;">
+        <input id="heartTwo" type="image" src="Images/heart.png" onclick="invertIcon('heartTwo')" class="mt-1 float-start" style="background-color: #2E72AD; max-width: 2.5rem;">
+        <input id="repostTwo" type="image" src="Images/repost.png" onclick="invertIcon('repostTwo')" class="mt-1 ms-2" style="background-color: #2E72AD; max-width: 2.5rem;">
+      </div>
+    </div>
+      </div> <!--These div tags are spaced wackily-->
+    </div>
+
+    <br>
+    <div class="container-fluid">
+      <p class="dark-hidden-text text-center">.</p> <!--This period has to be here for spacing because I'm tired and margins didn't work-->
+      <hr>
+      <p class="text-white-50 text-center footer-links"><a href="#" class="text-white-50" style="text-decoration: none;">About</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Help Center</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Terms of Service</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Privacy Policy</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Cookie Policy</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Ads info</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Blog</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Status</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Careers</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Brand Resources</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Advertising</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Marketing</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Twitter for Business</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Developers</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Directory</a>
+        <a href="#" class="text-white-50 footer-links" style="text-decoration: none;">Settings</a>
+        <br><br><a class="text-info" href="#top">back to the top</a></p>
+      <hr style="margin-bottom: 0.01rem;">
+    </div>
+
+    <script src="JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
